@@ -1,11 +1,29 @@
 
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<span>Home</span>
+  },
+  {
+    path:"/products/:id",
+    element:<span>Category</span>
+  },
+  {
+    path:"/product/:id",
+    element:<span>Product</span>
+  }
+])
+
 function App() {
   return (
     <div className="App">
-      <>
-      <p>Cooptex website</p>
-      
-      </>
+      <RouterProvider router={router}/>
     </div>
   );
 }
