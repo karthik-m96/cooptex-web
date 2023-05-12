@@ -21,11 +21,10 @@ const Layout = () => {
 }
 
 const router = createBrowserRouter([
-  {
+  { 
     path:"/",
     element:<Layout/>,
-    children:[
-      {
+    children:[{
         path:"/",
         element:<Home/>
       },
@@ -36,7 +35,7 @@ const router = createBrowserRouter([
       {
         path:"/product/:id",
         element:<Product/>
-      },
+      }
     ]
   }
 ])
