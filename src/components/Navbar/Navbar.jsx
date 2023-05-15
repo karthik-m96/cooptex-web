@@ -5,7 +5,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { Link } from "react-router-dom";
-import "./Navbar.scss"
+import "./Navbar.scss";
 
 const Navbar = () => {
   return (
@@ -31,27 +31,31 @@ const Navbar = () => {
           </div>
         </div>
         <div className="center">
-          <Link to="/">Cooptex</Link>
+          <Link to="/">
+            <img src="./img/cooptex-eng.JPG" alt="cooptex-logo" />
+          </Link>
         </div>
-        <div className="center">
-          <Link to="/">Homepage</Link>
-        </div>
-        <div className="center">
-          <Link to="/">About</Link>
-        </div>
-        <div className="center">
-          <Link to="/">Contact</Link>
-        </div>
-        <div className="center">
-          <Link to="/">Stores</Link>
-        </div>
-        <div className="icons">
-          <SearchIcon />
-          <PersonOutlineOutlinedIcon />
-          <FavoriteBorderOutlinedIcon />
-          <div className="cartIcon">
-            <ShoppingCartOutlinedIcon />
-            <span>0</span>
+        <div className="right">
+          <div className="item">
+            <Link to="/">Homepage</Link>
+          </div>
+          <div className="item">
+            <Link to="/">About</Link>
+          </div>
+          <div className="item">
+            <Link to="/">Contact</Link>
+          </div>
+          <div className="item">
+            <Link to="/">Stores</Link>
+          </div>
+          <div className="icons">
+            <SearchIcon />
+            <PersonOutlineOutlinedIcon />
+            <FavoriteBorderOutlinedIcon />
+            <div className="cartIcon">
+              <ShoppingCartOutlinedIcon />
+              <span>0</span>
+            </div>
           </div>
         </div>
       </div>
