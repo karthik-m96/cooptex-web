@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: 2px solid #7777;
-  background-color: #f1f1f;
+  background-color: #fff1;
 
   .wrapper {
     padding: 10px 30px;
@@ -27,8 +27,13 @@
       text-align: center;
 
       img {
-        width: 70px;
-        padding: 0 20px 0 0;
+        width: 80px;
+      }
+
+      .images{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
     }
 
