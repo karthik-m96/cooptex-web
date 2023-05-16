@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="center">
           <div className="images">
             <Link className="link" to="/">
-              <img src="../img/cooptex-eng.JPG" alt="cooptex-logo" />
+              <img src="/img/cooptex.png" alt="cooptex-logo" />
             </Link>
             <img src="/img/TN.png" alt="Tamil Nadu Govt emblem" />
           </div>
