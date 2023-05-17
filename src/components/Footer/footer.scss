@@ -7,7 +7,7 @@
     justify-content: space-around;
     margin: 10px 150px 20px 150px;
 
-    .item {
+    .item { 
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -17,7 +17,7 @@
   .bottom {
     display: flex;
     justify-content: space-between;
-    margin: 30px 150px 20px 150px;
+    margin: 30px 150px 0px 150px;
 
     .left {
       color: lightslategray;
