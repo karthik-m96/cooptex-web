@@ -10,8 +10,8 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-9silkset309kavyaback12023-2-21-18-13-41600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: 20090,
-      price: 17030,
+      oldPrice: '20,090',
+      price: '17,030',
     },
     {
       id: 2,
@@ -19,8 +19,8 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-1silkset309kavyaback12023-2-21-18-13-481600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: 21028,
-      price: 17834,
+      oldPrice: '21,028',
+      price: '17,834',
     },
     {
       id: 3,
@@ -28,8 +28,8 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-5silkset309kavyaback12023-2-21-18-13-111600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: 20246,
-      price: 17163,
+      oldPrice: '20,246',
+      price: '17,163',
     },
     {
       id: 4,
@@ -37,20 +37,21 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-8silkset309kavyaback12023-2-21-18-13-51600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: 23893,
-      price: 20289,
+      oldPrice: '23,893',
+      price: '20,289',
     },
   ];
   return (
     <div className="featuredProducts">
       <div className="top">
-        <h1>Cooptex Society:</h1>
+        <h1>Cooptex Society</h1>
         <p>
           Though the history of weavers’ co-operative dates back to the first
           quarter of 20th century, strictly speaking serious efforts were made
           in the year 1934-35 to bring large number of weavers in TamilNadu
           under the co-operative fold to strengthen entire handloom sector.
         </p>
+        <h1>Featured Products</h1>
       </div>
       <div className="bottom">
         {data.map((item) => (
