@@ -1,6 +1,6 @@
 .products {
   padding: 30px 50px;
-
+  display: flex;
 
   .left {
     flex: 1;
@@ -8,29 +8,31 @@
     height: 100%;
     top: 50px;
 
-    .filterItem {
+    .filterItem{
       margin-bottom: 30px;
 
-      h2 {
+      h2{
         font-weight: 400;
         margin-bottom: 20px;
       }
 
-      .inputItem {
+      .inputItem{
         margin-bottom: 10px;
-        label {
+        label{
           margin-left: 10px;
         }
       }
     }
   }
-
+  
   .right {
-    display: flex;
+    flex: 3;
 
-
-    .catImg {
-        position: block;
+    .catImg{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
     }
   }
 }
