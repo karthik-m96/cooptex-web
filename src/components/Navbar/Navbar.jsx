@@ -7,7 +7,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = () => { 
   return (
     <div className="navbar">
       <div className="wrapper">
