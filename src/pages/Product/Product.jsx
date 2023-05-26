@@ -11,7 +11,10 @@ const Product = () => {
     <div className="product">
       <div className="left">
         <div className="images">
-          <img src="" alt="" />
+          <div>
+            <img src={images[0]} alt="" />
+            <img src={images[1]} alt="" />
+          </div>
         </div>
       </div>
       <div className="right"></div>
