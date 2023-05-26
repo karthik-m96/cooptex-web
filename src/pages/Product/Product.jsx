@@ -1,13 +1,9 @@
-import React from "react";
-import "./Product.scss";
+import React from 'react'
+import "./Product.scss"
 
 const Product = () => {
-  const images = [
-    "https://images.pexels.com/photos/15985569/pexels-photo-15985569/free-photo-of-cold-snow-wood-light.jpeg",
-    "https://images.pexels.com/photos/12179283/pexels-photo-12179283.jpeg",
-  ];
-
   return (
+<<<<<<< HEAD
     <div className="product">
       <div className="left">
         <div className="images">
@@ -21,5 +17,10 @@ const Product = () => {
     </div>
   );
 };
+=======
+    <div className='product'>Product</div>
+  )
+}
+>>>>>>> parent of b0c0db3 (card)
 
-export default Product;
+export default Product
