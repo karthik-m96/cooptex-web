@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <Link className="link" to="/products/3">
-              Home Textiles
+              CMSS (Chit Scheme)
             </Link>
           </div>
         </div>
