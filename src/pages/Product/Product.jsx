@@ -37,8 +37,10 @@ const Product = () => {
       </div>
       <div className="right">
         <h1>Kancheepuram Pure Zari Silk Sarees</h1>
-        <span>Rs.20,090</span>
-        <span>Rs.17,030</span>
+        <div className="prices">
+          <span className="oldPrice">Rs.20,090</span>
+          <span className="newPrice">Rs.17,030</span>
+        </div>
         <p>
           Kanchipuram sarees are hand woven from pure mulberry silk. The skilled
           artisans weave them on handlooms, creating a unique hand-made work of
@@ -62,14 +64,10 @@ const Product = () => {
         </button>
         <div className="link">
           <div className="item">
-            <button>
-              <FavoriteBorderIcon /> Add to wishlist
-            </button>
+            <FavoriteBorderIcon /> Add to wishlist
           </div>
           <div className="item">
-            <button>
-              <BalanceIcon /> Add to compare
-            </button>
+            <BalanceIcon /> Add to compare
           </div>
         </div>
         <div className="info">
@@ -78,6 +76,8 @@ const Product = () => {
           <span>Tag: T-Shirt, Women, Top</span>
         </div>
         <hr />
+
+
         <div className="info">
           <span>DESCRIPTION</span>
           <hr />
