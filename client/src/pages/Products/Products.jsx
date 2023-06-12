@@ -17,27 +17,27 @@ const Products = () => {
           <h2>Product Categories</h2>
           <div className="inputItem">
             <input type="checkbox" id="1" value={1} />
-            <label htmlFor="1">Kancheepuram Silks</label>
+            <label htmlFor="1">Kancheepuram Silks Sarees</label>
           </div>
           <div className="inputItem">
             <input type="checkbox" id="2" value={2} />
-            <label htmlFor="2">Arani Silks</label>
+            <label htmlFor="2">Arani Silks Sarees</label>
           </div>
           <div className="inputItem">
             <input type="checkbox" id="3" value={3} />
-            <label htmlFor="3">Thirubuvanam Silks</label>
+            <label htmlFor="3">Thirubuvanam Silks Sarees</label>
           </div>
           <div className="inputItem">
             <input type="checkbox" id="4" value={4} />
-            <label htmlFor="4">Salem Silks</label>
+            <label htmlFor="4">Salem Silks Sarees</label>
           </div>
           <div className="inputItem">
             <input type="checkbox" id="5" value={5} />
-            <label htmlFor="5">Rasipuram Silks</label>
+            <label htmlFor="5">Rasipuram Silks Sarees</label>
           </div>
           <div className="inputItem">
             <input type="checkbox" id="6" value={6} />
-            <label htmlFor="6">Soft Silks</label>
+            <label htmlFor="6">Soft Silks Sarees</label>
           </div>
         </div>
         <div className="filterItem">
