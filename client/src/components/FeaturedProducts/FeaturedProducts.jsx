@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./FeaturedProducts.scss";
 import Card from "../Card/Card";
+import axios from "axios";
 
 const FeaturedProducts = ({ type }) => {
+  
   const data = [
     {
       id: 1,
@@ -10,8 +12,8 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-9silkset309kavyaback12023-2-21-18-13-41600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: '20,090',
-      price: '17,030',
+      oldPrice: "20,090",
+      price: "17,030",
     },
     {
       id: 2,
@@ -19,8 +21,8 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-1silkset309kavyaback12023-2-21-18-13-481600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: '21,028',
-      price: '17,834',
+      oldPrice: "21,028",
+      price: "17,834",
     },
     {
       id: 3,
@@ -28,8 +30,8 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-5silkset309kavyaback12023-2-21-18-13-111600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: '20,246',
-      price: '17,163',
+      oldPrice: "20,246",
+      price: "17,163",
     },
     {
       id: 4,
@@ -37,10 +39,32 @@ const FeaturedProducts = ({ type }) => {
       img2: "https://www.cooptex.gov.in/image/cache/data/FEB/SKBSA/SKBSA/TRI3DSKBS-8silkset309kavyaback12023-2-21-18-13-51600X2400-285x318.jpg",
       title: "Kancheepuram Pure Zari Silk Sarees",
       isNew: true,
-      oldPrice: '23,893',
-      price: '20,289',
+      oldPrice: "23,893",
+      price: "20,289",
     },
   ];
+
+  const [prodataducts, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await axios.get(
+          process.env.REACT_APP_API_URL + "/products",
+          {
+            headers: {
+              Authorization: "bearer " + process.env.REACT_APP_API_TOKEN,
+            },
+          }
+        );
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="featuredProducts">
       <div className="top">
