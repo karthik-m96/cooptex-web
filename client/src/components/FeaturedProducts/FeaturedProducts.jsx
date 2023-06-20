@@ -44,7 +44,7 @@ const FeaturedProducts = ({ type }) => {
     },
   ];
 
-  const [prodataducts, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
