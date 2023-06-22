@@ -43,10 +43,10 @@ const List = () => {
   ];
   return (
     <div className="list">
-      {data?.map((item) => {
+      {/* {data?.map((item) => {
         return(
         <Card item={item} key={item.id} />
-      )})}
+      )})} */}
     </div>
   );
 };
