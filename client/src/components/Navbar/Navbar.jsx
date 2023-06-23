@@ -5,6 +5,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { Link } from "react-router-dom";
+import About from "../../pages/About/About"
 import "./Navbar.scss";
 import Cart from "../Cart/Cart"
 
@@ -34,7 +35,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/products/3">
+            <Link className="link" to="https://www.cooptex.gov.in/index.php?route=information/knt_scheme">
               CMSS (Chit Scheme)
             </Link>
           </div>
@@ -58,7 +59,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="/about">
               About
             </Link>
           </div>
@@ -68,7 +69,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="https://cooptex.gov.in/index.php?route=information/store">
               Stores
             </Link>
           </div>
