@@ -1,4 +1,3 @@
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +11,8 @@ import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
 import ContactUs from "./pages/Contact/ContactUs"
+import Shipping from "./pages/Shipping/Shipping";
+import Privacy from "./pages/Privacy/Privacy";
 import "./App.scss"
 
 const Layout = () => {
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
     {
       path: "/contactus",
       element: <ContactUs />
+    },
+    {
+      path: "/shipping",
+      element: <Shipping />
+    },
+    {
+      path: "/privacy",
+      element: <Privacy />
     }
     ]
   }
