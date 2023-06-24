@@ -34,7 +34,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/products/3">
+            <Link className="link" to="https://www.cooptex.gov.in/index.php?route=information/knt_scheme">
               CMSS (Chit Scheme)
             </Link>
           </div>
@@ -58,17 +58,17 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="/about">
               About
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="/contact">
               Contact
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="https://cooptex.gov.in/index.php?route=information/store">
               Stores
             </Link>
           </div>

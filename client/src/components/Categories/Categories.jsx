@@ -14,7 +14,7 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link className="link" to="/products/1">
+            <Link className="link" to="/products/3">
               Kancheepuram Silks
             </Link>
           </button>
@@ -25,7 +25,7 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="/products/4" className="link">
               Thirubuvanam Silks
             </Link>
           </button>
@@ -39,7 +39,7 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="/products/5" className="link">
               Arani silks
             </Link>
           </button>
@@ -54,7 +54,7 @@ const Categories = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/1" className="link">
+                <Link to="/products/6" className="link">
                   Salem silks
                 </Link>
               </button>
@@ -68,7 +68,7 @@ const Categories = () => {
                 alt=""
               />
               <button>
-                <Link to="/products/1" className="link">
+                <Link to="/products/7" className="link">
                   Rasipuram silks
                 </Link>
               </button>
@@ -81,7 +81,7 @@ const Categories = () => {
             alt=""
           />
           <button>
-            <Link to="/products/1" className="link">
+            <Link to="/products/8" className="link">
               soft silks
             </Link>
           </button>
