@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
@@ -15,14 +14,6 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-          <div className="item">
-            <span>English</span>
-            <KeyboardArrowDownIcon />
-          </div>
-          <div className="item">
-            <span>INR</span>
-            <KeyboardArrowDownIcon />
-          </div>
           <div className="item">
             <Link className="link" to="/products/1">
               Women

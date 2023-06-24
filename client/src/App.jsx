@@ -11,42 +11,47 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
+import ContactUs from "./pages/Contact/ContactUs"
 import "./App.scss"
 
 const Layout = () => {
   return (
     <div className="app">
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   )
 }
 
 const router = createBrowserRouter([
-  { 
-    path:"/",
-    element:<Layout/>,
-    children:[{
-        path:"/",
-        element:<Home/>
-      },
-      {
-        path:"/products/:id",
-        element:<Products/>
-      },
-      {
-        path:"/product/:id",
-        element:<Product/>
-      },
-      {
-        path:"/about",
-        element: <About />
-      },
-      {
-        path:"/contact",
-        element: <Contact />
-      }
+  {
+    path: "/",
+    element: <Layout />,
+    children: [{
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "/products/:id",
+      element: <Products />
+    },
+    {
+      path: "/product/:id",
+      element: <Product />
+    },
+    {
+      path: "/about",
+      element: <About />
+    },
+    {
+      path: "/contact",
+      element: <Contact />
+    },
+    {
+      path: "/contactus",
+      element: <ContactUs />
+    }
     ]
   }
 ])
@@ -54,7 +59,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   );
 }
