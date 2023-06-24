@@ -13,6 +13,7 @@ import Contact from "./pages/Contact/Contact"
 import ContactUs from "./pages/Contact/ContactUs"
 import Shipping from "./pages/Shipping/Shipping";
 import Privacy from "./pages/Privacy/Privacy";
+import Disclaimer from "./pages/Disclaimer/Disclaimer";
 import "./App.scss"
 
 const Layout = () => {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
     {
       path: "/privacy",
       element: <Privacy />
+    },
+    {
+      path: "/disclaimer",
+      element: <Disclaimer />
     }
     ]
   }
