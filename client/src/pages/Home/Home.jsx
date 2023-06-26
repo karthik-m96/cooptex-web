@@ -17,9 +17,9 @@ const Home = () => {
           under the co-operative fold to strengthen entire handloom sector.
         </p>
       </div>
-      <FeaturedProducts type="featured" />
-      <Categories />
       <FeaturedProducts type="trending" />
+      <Categories />
+      <FeaturedProducts type="featured" />
     </div>
   );
 };
