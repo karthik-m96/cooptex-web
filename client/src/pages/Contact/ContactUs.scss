@@ -1,3 +1,49 @@
-.contact {
-    
+.contactus {
+  margin: 50px 200px 50px 200px;
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  p {
+    text-indent: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contactus {
+    margin: 50px;
+    h1 {
+      text-align: left;
+    }
+
+    h3 {
+      text-decoration: none;
+    }
+
+    p {
+      text-indent: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contactus {
+    margin: 50px;
+    h1 {
+      text-align: left;
+    }
+
+    h3 {
+      text-decoration: none;
+    }
+
+    p {
+      text-indent: 0;
+    }
+  }
 }
