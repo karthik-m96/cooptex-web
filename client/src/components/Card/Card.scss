@@ -1,10 +1,9 @@
 .card{
     border: 2px solid rgb(245, 245, 245);
-    padding: 10px;
+    padding: 5px;
     width: 280px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 50px;
   
@@ -34,36 +33,31 @@
       span{
         position: absolute;
         top: 5px;
-        left: 5px;
-        background-color: white;
-        color: teal;
-        padding: 3px 5px;
+        right: 5px;
+        color: white;
+        background-color: rgb(247, 59, 59);
+        padding: 3px;
         z-index: 3;
-        font-weight: 500;
+        font-weight: 800;
         font-size: 12px;
       }
-    }
-
-    .titleText{
-        text-align: center;
     }
   
     h2{
       font-size: 16px;
       font-weight: 400;
-
+      margin-bottom: 0;
+      text-align: center;
     }
   
     .prices{
       display: flex;
       gap: 5px;
-      align-items: center;
       justify-content: center;
   
       h3{
         font-size: 18px;
         font-weight: 500;
-
   
         &:first-child{
           color: gray;

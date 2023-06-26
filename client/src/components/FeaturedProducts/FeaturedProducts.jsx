@@ -1,7 +1,7 @@
 import React from "react";
 import "./FeaturedProducts.scss";
 import Card from "../Card/Card";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
 const FeaturedProducts = ({ type }) => {
   const { data, loading, error } = useFetch(
@@ -11,14 +11,7 @@ const FeaturedProducts = ({ type }) => {
   return (
     <div className="featuredProducts">
       <div className="top">
-        <h1>{type} Cooptex Society</h1>
-        <p>
-          Though the history of weavers’ co-operative dates back to the first
-          quarter of 20th century, strictly speaking serious efforts were made
-          in the year 1934-35 to bring large number of weavers in TamilNadu
-          under the co-operative fold to strengthen entire handloom sector.
-        </p>
-        <h1>Featured Products</h1>
+        <h1>{type} Products</h1>
       </div>
       <div className="bottom">
       {error

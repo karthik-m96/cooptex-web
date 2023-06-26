@@ -1,3 +1,11 @@
 .home {
-    
+    .homeAbout {
+        width: fit-content;
+        margin: 0 200px 0 200px;
+        
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
 }
