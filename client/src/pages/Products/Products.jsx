@@ -8,11 +8,23 @@ const Products = () => {
   const catId = parseInt(useParams().id);
   const [maxPrice, setMaxPrice] = useState(50000);
   const [sort, setSort] = useState(null);
+  const [selectedSubCats, setSelectedSubCats] = useState([]);
 
-  const { data, loading, error } = useFetch(
+  const { data } = useFetch(
     `/subcategories?[filters][subcategories][id][$eq]=${catId}`
   );
-console.log(data)
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    const isChecked = e.target.checked;
+
+    setSelectedSubCats(
+      isChecked
+        ? [...selectedSubCats, value]
+        : selectedSubCats.filter((item) => item !== value)
+    );
+  };
+
   return (
     <div className="products">
       <div className="left">
@@ -20,17 +32,22 @@ console.log(data)
           <h2>Product Categories</h2>
           {data?.map((item) => (
             <div className="inputItem" key={item.id}>
-              <input type="checkbox" id={item.id} value={item.id} />
+              <input
+                type="checkbox"
+                id={item.id}
+                value={item.id}
+                onChange={handleChange}
+              />
               <label htmlFor={item.id}>{item.attributes.title}</label>
             </div>
           ))}
           <div className="filterItem">
             <h2>Filter by price</h2>
             <div className="inputItem">
-              <span>0</span>
+              <span>100</span>
               <input
                 type="range"
-                min={0}
+                min={100}
                 max={50000}
                 onChange={(e) => setMaxPrice(e.target.value)}
               />
@@ -61,10 +78,10 @@ console.log(data)
             </div>
           </div>
         </div>
-        <div className="right">
-          <img className="catImg" src="/img/product.jpg " alt="bannerimage" />
-          <List catId={catId} maxPrice={maxPrice} sort={sort} />
-        </div>
+      </div>
+      <div className="right">
+        <img className="catImg" src="/img/product.jpg " alt="bannerimage" />
+        <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/>
       </div>
     </div>
   );

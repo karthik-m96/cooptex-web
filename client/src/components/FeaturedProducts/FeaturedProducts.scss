@@ -1,11 +1,12 @@
 .featuredProducts {
-  margin: 100px 200px 0px 200px;
+  margin-top: 50px;
 
   .top {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     h1 {
       flex: 2;
+      margin: 0px 0px 0px 200px;
       text-transform: capitalize;
     }
   }
@@ -18,21 +19,26 @@
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .featuredProducts {
-    h1 {
+    .top {
       margin: 10px;
-      font-size: 25px;
-      text-align: center;
-    }
-    .bottom {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+
+      h1 {
+        margin: 10px;
+        font-size: 20px;
+        text-align: left;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
     }
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .featuredProducts {
+    overflow: scroll;
     h1 {
       font-size: 25px;
       text-align: center;
