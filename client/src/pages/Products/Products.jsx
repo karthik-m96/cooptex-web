@@ -72,7 +72,9 @@ const Products = () => {
                 id="desc"
                 value="desc"
                 name="price"
-                onChange={(e) => setSort("desc")}
+                defaultChecked
+                onChange={(e) => setSort("desc")
+              }
               />
               <label htmlFor="desc">Price high to low</label>
             </div>

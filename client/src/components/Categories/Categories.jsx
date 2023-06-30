@@ -10,7 +10,7 @@ const Categories = () => {
       <div className="col">
         <div className="row">
           <img
-            src="https://cooptex.gov.in/image/magictoolbox_cache/cf3e6ec01aac7cb79461bcfe9d0d075e/2/1/21336_product/thumb1000x1000/3513580530/KPMSILKS-24012023-21B.JPG"
+            src="./img/Kanchi_category.jpg"
             alt=""
           />
           <button>
@@ -21,7 +21,7 @@ const Categories = () => {
         </div>
         <div className="row">
           <img
-            src="https://cooptex.gov.in/image/magictoolbox_cache/cf3e6ec01aac7cb79461bcfe9d0d075e/2/1/21463_product/thumb500x500/2980256496/TBM-09022023-7A.JPG"
+            src="./img/Tirubhuvanam_category.jpg"
             alt=""
           />
           <button>
@@ -35,7 +35,7 @@ const Categories = () => {
         <div className="row">
           {" "}
           <img
-            src="https://cooptex.gov.in/image/magictoolbox_cache/cf3e6ec01aac7cb79461bcfe9d0d075e/2/1/21784_product/thumb1000x1000/2744519880/KOTADICHECKS-15052023-2B.JPG"
+            src="./img/Arni_category.jpg"
             alt=""
           />
           <button>
@@ -50,7 +50,7 @@ const Categories = () => {
           <div className="col">
             <div className="row">
               <img
-                src="https://cooptex.gov.in/image/magictoolbox_cache/cf3e6ec01aac7cb79461bcfe9d0d075e/2/0/20817_product/thumb500x500/673536713/TRI3DKPM-23allset0nomofolded62023-4-12-17-18-431600X2400.jpg"
+                src="./img/Salem_category.jpg"
                 alt=""
               />
               <button>
@@ -64,7 +64,7 @@ const Categories = () => {
             <div className="row">
               {" "}
               <img
-                src="https://cooptex.gov.in/image/magictoolbox_cache/cf3e6ec01aac7cb79461bcfe9d0d075e/2/0/20825_product/thumb1000x1000/4235152201/SALEMSILKS-DEC1202022-5B.JPG"
+                src="./img/Rasipuram_category.jpg"
                 alt=""
               />
               <button>
@@ -77,7 +77,7 @@ const Categories = () => {
         </div>
         <div className="row">
           <img
-            src="https://cooptex.gov.in/image/magictoolbox_cache/cf3e6ec01aac7cb79461bcfe9d0d075e/2/1/21646_product/thumb1000x1000/3072083456/TRI3Dsclb-705allset0nomofolded72023-5-8-18-37-471600X2400.jpg"
+            src="./img/Soft_silks_category.jpg"
             alt=""
           />
           <button>
